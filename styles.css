@@ -40,11 +40,12 @@ nav ul li a {
 .home-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1.5em;
+    justify-content: space-between;
     max-width: 800px;
     margin: auto;
     text-align: left;
+    gap: 1.5em;
+    flex-wrap: wrap; /* Ensures items wrap without breaking layout */
 }
 
 .profile-photo {
