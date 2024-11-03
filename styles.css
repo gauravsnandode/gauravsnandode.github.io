@@ -33,19 +33,18 @@ nav ul li a {
 
 #home {
     background-color: #e0f7fa; /* Soft teal background for home section */
-    padding: 2em 0;
+    padding: 3em 0;
     text-align: center;
 }
 
 .home-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1.5em;
     max-width: 800px;
     margin: auto;
     text-align: left;
-    gap: 1.5em;
-    flex-wrap: wrap; /* Ensures items wrap without breaking layout */
 }
 
 .profile-photo {
@@ -90,12 +89,5 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    .home-content {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
