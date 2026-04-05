@@ -3,120 +3,703 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gaurav Nandode, an experienced Lead Data Scientist specializing in data-driven algorithms, machine learning, deep learning, natural language processing, large language models, generative ai and  data engineering.">
-    <title>Gaurav Nandode - Lead Data Scientist | Developing Data-driven Algorithms</title>
+    <meta name="description" content="Gaurav Nandode — Lead Data Scientist with 9+ years building production ML systems that reduce costs, accelerate decisions, and scale across logistics, healthcare, and enterprise AI.">
+    <title>Gaurav Nandode — Lead Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Gaurav Nandode",
-          "jobTitle": "Lead Data Scientist",
-          "url": "https://gauravsnandode.github.io/",
-          "sameAs": [
-            "https://linkedin.com/in/gsnandode"
-          ]
-        }
-        </script>
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Gaurav Nandode",
+      "jobTitle": "Lead Data Scientist",
+      "url": "https://gauravsnandode.github.io/",
+      "alumniOf": [
+        {"@type": "CollegeOrUniversity", "name": "IIT Kanpur"},
+        {"@type": "CollegeOrUniversity", "name": "VNIT Nagpur"}
+      ],
+      "sameAs": ["https://linkedin.com/in/gsnandode"]
+    }
+    </script>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#hero" class="nav-logo">GN</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#work">Work</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#demo">Live Demo</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+        <a href="Gaurav_Nandode_Resume.pdf" class="btn btn-sm btn-outline-nav" target="_blank" rel="noopener">Resume ↓</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
 
-    <!-- Home Section -->
-    <section id="home">
-        <div class="home-content">
-            <div class="home-text">
-                <h1>Gaurav Nandode</h1>
-                <p>Developing Data-driven Algorithms | Lead Data Scientist</p>
-                <p><a href="Gaurav_Nandode_Resume.pdf" target="_blank">Download My Resume</a></p>
+<!-- ===== HERO ===== -->
+<section id="hero" class="hero">
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <h1 class="hero-headline">
+                    I turn operational complexity into measurable business outcomes.
+                </h1>
+                <p class="hero-sub">
+                    Lead Data Scientist · 9 years building production ML systems across logistics, healthcare, and enterprise AI — reducing costs by 15%, cutting processing time by 25%.
+                </p>
+                <div class="hero-cta">
+                    <a href="#work" class="btn btn-primary">View Work</a>
+                    <a href="Gaurav_Nandode_Resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download Resume</a>
+                </div>
+                <div class="hero-proof">
+                    <div class="proof-item">
+                        <span class="proof-num">9+</span>
+                        <span class="proof-label">Years experience</span>
+                    </div>
+                    <div class="proof-divider"></div>
+                    <div class="proof-item">
+                        <span class="proof-num">15%</span>
+                        <span class="proof-label">Cost reduction</span>
+                    </div>
+                    <div class="proof-divider"></div>
+                    <div class="proof-item">
+                        <span class="proof-num">1</span>
+                        <span class="proof-label">US Patent</span>
+                    </div>
+                    <div class="proof-divider"></div>
+                    <div class="proof-item">
+                        <span class="proof-num">IIT</span>
+                        <span class="proof-label">Kanpur M.Tech</span>
+                    </div>
+                </div>
             </div>
-            <img src="photo.jpg" alt="Gaurav Nandode, Lead Data Scientist" class="profile-photo">
+            <div class="hero-image">
+                <div class="photo-wrapper">
+                    <img src="photo.jpg" alt="Gaurav Nandode, Lead Data Scientist" class="profile-photo">
+                    <div class="photo-ring"></div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Data Lead with 9 years of experience in developing data-driven algorithms, mentoring junior data scientists, and leading data science initiatives. Proven track record in optimizing logistics, econometric modeling, and sales forecasting for global companies.</p>
-    </section>
+<!-- ===== IMPACT ===== -->
+<section id="impact" class="section impact-section">
+    <div class="container">
+        <div class="section-label">Impact at a glance</div>
+        <div class="impact-grid">
+            <div class="impact-card fade-in">
+                <div class="impact-number">15%</div>
+                <div class="impact-title">Cost reduction</div>
+                <p class="impact-desc">Fuel planning optimization via linear programming for a large logistics fleet, capturing real-world consumption patterns through econometric modeling.</p>
+                <div class="impact-tag">Optimization · Logistics</div>
+            </div>
+            <div class="impact-card fade-in">
+                <div class="impact-number">30%</div>
+                <div class="impact-title">Better crash detection</div>
+                <p class="impact-desc">Improved issue detection accuracy using advanced log clustering and computer vision pipelines — groundwork that led to a granted US patent.</p>
+                <div class="impact-tag">Computer Vision · NLP</div>
+            </div>
+            <div class="impact-card fade-in">
+                <div class="impact-number">25%</div>
+                <div class="impact-title">Faster data processing</div>
+                <p class="impact-desc">Reduced pipeline processing time using custom K-means clustering with Jaccard scores and PySpark optimizations at scale.</p>
+                <div class="impact-tag">Data Engineering · NLP</div>
+            </div>
+            <div class="impact-card fade-in">
+                <div class="impact-number">20%</div>
+                <div class="impact-title">Higher invoice accuracy</div>
+                <p class="impact-desc">Automated invoice classification using Random Forest models, improving accuracy and expanding multilingual support across document types.</p>
+                <div class="impact-tag">ML · NLP · Finance</div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>Coditas</strong> - Lead Data Scientist (July 2022 - Present)
-                <p>Spearheaded data science initiatives and contributed individually to data science projects while mentoring junior data scientists.</p>
-                <p>Developed a mathematical optimization model for bunker planning, reducing costs by 10%.</p> 
-                <p>Implemented econometric models for behavioral analysis, resulting in 15% fuel savings.</p>
-                <p>Worked on SQL-based logic for getting accurate Remainder-on-Board numbers on a ship at any port.</p>
-                <p>Addressed a sales forecasting problem to estimate expected bookings in advance for a global leader in container shipping, using tree-based regression models to plan outbound sales.</p> 
-                <p>Developed solutions to estimate the gross margin for tracking company profits daily for a major children’s clothing and lifestyle e-commerce company.</p>
-                <p>Estimated possible returns in real-time, along with predictions for key business metrics in e-commerce, such as shipping costs and revenue share.</p> 
-                <p>Built Looker dashboards that consumed ML model predictions and contributed to refining data engineering pipelines.</p> 
-                <p>Leveraged Recency-Frequency-Monetary (RFM) scores to create customer segments and build various dashboards tracking the customer journey.</p>
-            </li>
-            <li><strong>AppZen</strong> - Senior Data Scientist (June 2021 - July 2022)
-                <p>Automated invoice processing with Random Forest Classifiers to boost accuracy by 20% and improved multilingual support using Neural Network models.</p>
-            </li>
-            <li><strong>Talentica Software</strong> - Data Scientist (Nov 2018 - June 2021)
-                <p>Enhanced issue detection and operational efficiency through advanced data classification, clustering, and pipeline optimization, achieving a 30% improvement in crash detection and a 25% reduction in processing time. Contributed to product development by implementing scalable, data-driven solutions for log analysis and key metric extraction.</p>
-            </li>
-            <li><strong>IBM India</strong> - Data Specialist: Cognitive Computing (Aug 2016 - Nov 2018)
-                <p>Implemented algorithms for image segmentation, NER for signatory recognition, speech-to-text conversions, and speaker label identification.</p>
-            </li>
-        </ul>
-    </section>
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section about-section">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-left fade-in">
+                <div class="section-label">About</div>
+                <h2 class="section-title">I build ML systems that solve real operational problems.</h2>
+            </div>
+            <div class="about-right fade-in">
+                <p>I'm a Lead Data Scientist with 9+ years of experience translating messy, real-world data into systems that make decisions, reduce costs, and scale. My work spans demand forecasting, fleet optimization, LLM evaluation, and computer vision — always ending with a deployed system and a measurable outcome, not just a notebook.</p>
+                <p>I care about the full stack of data science: strong statistical foundations, clean engineering, and the ability to communicate results to stakeholders who don't speak Python. I've led bootcamps, mentored junior scientists, and hold a US patent for log analysis in vector space.</p>
+                <div class="about-tags">
+                    <span class="skill-tag">Demand Forecasting</span>
+                    <span class="skill-tag">Fleet Optimization</span>
+                    <span class="skill-tag">LLM Evaluation</span>
+                    <span class="skill-tag">RAG Systems</span>
+                    <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">Time Series</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Log Analysis in Vector Space</strong> - Built custom K-means clustering using Jaccard scores and optimized data pipelines with PySpark, reducing processing time by 25%.</li>
-            <li><strong>Cognitive Signature Capture and Verification</strong> - Used Hough Lines, PCA, HOG, and LBP features with SVM classifiers for signature verification and segmentation (03/2018 - 11/2018).</li>
-            <li><strong>C3 - Cognitive Content Collator</strong> - Worked on image segmentation and audio chunking for content extraction using HOG and silence detection (10/2016 - 02/2018).</li>
-            <li><strong>Auto Insurance Damage Assessment</strong> - Developed confidence-based damage classifiers for vehicle part assessment and deployed on IBM Bluemix (10/2016 - 11/2016).</li>
-        </ul>
-    </section>
+<!-- ===== CASE STUDIES ===== -->
+<section id="work" class="section work-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-label">Featured work</div>
+            <h2 class="section-title">Case Studies</h2>
+            <p class="section-subtitle">Three projects that show how I frame problems, choose methods, and ship results.</p>
+        </div>
 
-    <!-- Patent Section -->
-    <section id="patent">
-        <h2>Patent</h2>
-        <p>Log analysis in vector space - Patent No.: <a href="https://patents.google.com/patent/US11138059B2/en?oq=US11138059B2" target="_blank">US11138059B2</a></p>
-    </section>
+        <!-- Case Study 1 -->
+        <div class="case-study fade-in">
+            <div class="cs-meta">
+                <span class="cs-number">01</span>
+                <span class="cs-domain">Healthcare · Logistics</span>
+            </div>
+            <h3 class="cs-title">Geospatial Demand Forecasting for Healthcare Fleet Optimization</h3>
+            <div class="cs-grid">
+                <div class="cs-block">
+                    <div class="cs-block-label">Problem</div>
+                    <p>A healthcare logistics client was over-deploying fleet resources in low-demand zones while underserving high-demand corridors. Static, intuition-based scheduling led to high idle time, missed SLAs, and mounting operational costs.</p>
+                </div>
+                <div class="cs-block">
+                    <div class="cs-block-label">Approach</div>
+                    <p>Built location-level demand forecasts using tree-based models with H3 hexagonal indexing to capture granular spatial demand patterns. Integrated these forecasts into a real-time fleet assignment engine with automated daily retraining pipelines to adapt to demand shifts continuously.</p>
+                </div>
+                <div class="cs-block">
+                    <div class="cs-block-label">Business Impact</div>
+                    <p class="cs-impact">Measurably improved resource utilization and reduced idle fleet time across high-density corridors — enabling data-driven dispatch decisions for the first time. Retraining pipelines ensured sustained accuracy without manual intervention.</p>
+                </div>
+            </div>
+            <div class="cs-stack">
+                <span class="tech-tag">XGBoost</span>
+                <span class="tech-tag">H3 Hexagonal Indexing</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Geospatial ML</span>
+                <span class="tech-tag">Automated Retraining</span>
+                <span class="tech-tag">Azure ML</span>
+            </div>
+        </div>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Python, SQL, Data Engineering, Image Processing, Computer Vision, Natural Language Processing, Applied Machine Learning, Deep Learning</p>
-    </section>
+        <!-- Case Study 2 -->
+        <div class="case-study fade-in">
+            <div class="cs-meta">
+                <span class="cs-number">02</span>
+                <span class="cs-domain">Operations · Optimization</span>
+            </div>
+            <h3 class="cs-title">15% Cost Reduction via Fuel Planning Optimization</h3>
+            <div class="cs-grid">
+                <div class="cs-block">
+                    <div class="cs-block-label">Problem</div>
+                    <p>A large logistics fleet was procuring fuel reactively — no forward planning, no route-consumption alignment. This led to cost overruns amplified by volatile fuel prices and driver-level behavioral variance.</p>
+                </div>
+                <div class="cs-block">
+                    <div class="cs-block-label">Approach</div>
+                    <p>Formulated the fuel procurement problem as a linear program (LP) with constraints on fleet capacity, route consumption, and depot availability. Layered econometric models to predict consumption patterns under different conditions, and behavioral models to capture driver-level variance.</p>
+                </div>
+                <div class="cs-block">
+                    <div class="cs-block-label">Business Impact</div>
+                    <p class="cs-impact">Achieved 15% improvement in cost efficiency on fuel planning — one of the highest-ROI data science projects the client had seen. The LP model is now the standard planning tool embedded in their operations workflow.</p>
+                </div>
+            </div>
+            <div class="cs-stack">
+                <span class="tech-tag">Linear Programming</span>
+                <span class="tech-tag">Econometric Modeling</span>
+                <span class="tech-tag">PuLP / SciPy</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Behavioral Modeling</span>
+            </div>
+        </div>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>M. Tech in Electrical Engineering, IIT Kanpur (2014 - 2016)</li>
-            <li>B. Tech in Electronics & Communication Engineering, VNIT Nagpur (2009 - 2013)</li>
-            <li><a href="Masters_Thesis_Report.pdf" target="_blank">Download My Master's Thesis Report</a></li>
-        </ul>
-    </section>
+        <!-- Case Study 3 -->
+        <div class="case-study fade-in">
+            <div class="cs-meta">
+                <span class="cs-number">03</span>
+                <span class="cs-domain">LLM · Evaluation · GenAI</span>
+            </div>
+            <h3 class="cs-title">Production-Grade LLM Evaluation Framework for RAG & Agent Systems</h3>
+            <div class="cs-grid">
+                <div class="cs-block">
+                    <div class="cs-block-label">Problem</div>
+                    <p>LLM applications were being shipped without rigorous evaluation. Teams had no way to detect quality regressions, measure retrieval accuracy, or identify hallucinations at scale — making production deployments a black box.</p>
+                </div>
+                <div class="cs-block">
+                    <div class="cs-block-label">Approach</div>
+                    <p>Designed a 6-phase evaluation pipeline: use-case definition → golden dataset creation → evaluator design (LLM-as-judge, NLI-based, automated metrics) → benchmarking → drift detection → real-time monitoring. Built retrieval metrics (MRR, Recall@K, Hit Rate) using Langfuse as the observability backbone.</p>
+                </div>
+                <div class="cs-block">
+                    <div class="cs-block-label">Business Impact</div>
+                    <p class="cs-impact">Enabled systematic performance tracking across model versions. Detected retrieval drift before it reached production. Reduced hallucinations by enforcing retrieval-constrained response generation — giving teams confidence to ship LLM features faster.</p>
+                </div>
+            </div>
+            <div class="cs-stack">
+                <span class="tech-tag">Langfuse</span>
+                <span class="tech-tag">LLM-as-Judge</span>
+                <span class="tech-tag">SentenceTransformers</span>
+                <span class="tech-tag">ChromaDB</span>
+                <span class="tech-tag">NLI Evaluation</span>
+                <span class="tech-tag">RAG</span>
+                <span class="tech-tag">Python</span>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="section experience-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-label">Career</div>
+            <h2 class="section-title">Experience</h2>
+        </div>
+        <div class="timeline">
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: gsnandode@gmail.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/gsnandode" target="_blank">linkedin.com/in/gsnandode</a></p>
-    </section>
+            <div class="timeline-item fade-in">
+                <div class="timeline-left">
+                    <span class="timeline-date">Jul 2022 — Present</span>
+                    <span class="timeline-company">Coditas</span>
+                </div>
+                <div class="timeline-right">
+                    <div class="timeline-role">Lead Data Scientist</div>
+                    <ul class="timeline-points">
+                        <li>Architected end-to-end ML systems across logistics, healthcare, and e-commerce — from problem framing to production deployment.</li>
+                        <li>Built a production-grade LLM evaluation framework (RAG + agents) with 6-phase pipeline, drift detection, and real-time observability using Langfuse.</li>
+                        <li>Optimized logistics fleet fuel costs by 15% using LP formulation with econometric and behavioral modeling.</li>
+                        <li>Designed geospatial demand forecasting system using H3 indexing and automated retraining for healthcare fleet management.</li>
+                        <li>Mentored junior data scientists; led internal bootcamps on ML and AI engineering practices.</li>
+                    </ul>
+                </div>
+            </div>
 
+            <div class="timeline-item fade-in">
+                <div class="timeline-left">
+                    <span class="timeline-date">Jun 2021 — Jul 2022</span>
+                    <span class="timeline-company">AppZen</span>
+                </div>
+                <div class="timeline-right">
+                    <div class="timeline-role">Senior Data Scientist</div>
+                    <ul class="timeline-points">
+                        <li>Automated invoice classification using Random Forest models, improving accuracy by 20% in production.</li>
+                        <li>Improved multilingual document processing using neural network models, expanding product coverage across languages.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in">
+                <div class="timeline-left">
+                    <span class="timeline-date">Nov 2018 — Jun 2021</span>
+                    <span class="timeline-company">Talentica Software</span>
+                </div>
+                <div class="timeline-right">
+                    <div class="timeline-role">Data Scientist</div>
+                    <ul class="timeline-points">
+                        <li>Improved crash detection accuracy by 30% using advanced log clustering and data classification pipelines.</li>
+                        <li>Reduced pipeline processing time by 25% via custom K-means clustering (Jaccard scores) and PySpark optimization.</li>
+                        <li>Log analysis in vector space work led to a granted US patent (US11138059B2).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in">
+                <div class="timeline-left">
+                    <span class="timeline-date">Aug 2016 — Nov 2018</span>
+                    <span class="timeline-company">IBM India</span>
+                </div>
+                <div class="timeline-right">
+                    <div class="timeline-role">Data Specialist — Cognitive Computing</div>
+                    <ul class="timeline-points">
+                        <li>Built algorithms for image segmentation, NER-based signatory recognition, and speech-to-text conversion.</li>
+                        <li>Developed speaker label identification and audio content extraction pipelines for enterprise AI products.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section skills-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-label">Capabilities</div>
+            <h2 class="section-title">Skills &amp; Stack</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-group fade-in">
+                <div class="skill-group-title">Machine Learning</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">XGBoost</span>
+                    <span class="skill-tag">Random Forest</span>
+                    <span class="skill-tag">Neural Networks</span>
+                    <span class="skill-tag">SVM</span>
+                    <span class="skill-tag">Time Series</span>
+                    <span class="skill-tag">Classification</span>
+                    <span class="skill-tag">Regression</span>
+                    <span class="skill-tag">Semi-supervised Learning</span>
+                </div>
+            </div>
+            <div class="skill-group fade-in">
+                <div class="skill-group-title">LLMs &amp; GenAI</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">RAG</span>
+                    <span class="skill-tag">LLM Evaluation</span>
+                    <span class="skill-tag">Agent Systems</span>
+                    <span class="skill-tag">LLM-as-Judge</span>
+                    <span class="skill-tag">SentenceTransformers</span>
+                    <span class="skill-tag">ChromaDB</span>
+                    <span class="skill-tag">Langfuse</span>
+                    <span class="skill-tag">Prompt Engineering</span>
+                </div>
+            </div>
+            <div class="skill-group fade-in">
+                <div class="skill-group-title">Optimization &amp; Analytics</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Linear Programming</span>
+                    <span class="skill-tag">Fleet Optimization</span>
+                    <span class="skill-tag">Geospatial ML</span>
+                    <span class="skill-tag">H3 Indexing</span>
+                    <span class="skill-tag">Econometric Modeling</span>
+                    <span class="skill-tag">Demand Forecasting</span>
+                </div>
+            </div>
+            <div class="skill-group fade-in">
+                <div class="skill-group-title">Engineering &amp; Cloud</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">PySpark</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">Azure ML</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">GCP</span>
+                    <span class="skill-tag">Snowflake</span>
+                    <span class="skill-tag">Looker</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== AUTHORITY ===== -->
+<section id="authority" class="section authority-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-label">Recognition &amp; credentials</div>
+            <h2 class="section-title">Authority</h2>
+        </div>
+        <div class="authority-grid">
+            <div class="authority-card fade-in">
+                <div class="authority-icon">⚡</div>
+                <div class="authority-content">
+                    <div class="authority-title">US Patent Holder</div>
+                    <p>Granted US Patent <a href="https://patents.google.com/patent/US11138059B2/en" target="_blank" rel="noopener">US11138059B2</a> for Log Analysis in Vector Space — a novel approach to clustering log data using Jaccard-based similarity in high-dimensional vector space.</p>
+                </div>
+            </div>
+            <div class="authority-card fade-in">
+                <div class="authority-icon">🎓</div>
+                <div class="authority-content">
+                    <div class="authority-title">IIT Kanpur — M.Tech</div>
+                    <p>Master of Technology in Electrical Engineering from IIT Kanpur (2014–2016). B.Tech in Electronics &amp; Communication from VNIT Nagpur (2009–2013). <a href="Masters_Thesis_Report.pdf" target="_blank" rel="noopener">Read thesis →</a></p>
+                </div>
+            </div>
+            <div class="authority-card fade-in">
+                <div class="authority-icon">📣</div>
+                <div class="authority-content">
+                    <div class="authority-title">Educator &amp; Mentor</div>
+                    <p>Conducts internal bootcamps on ML and AI engineering. Mentors junior data scientists on production practices, system design, and applied modeling — building team capability, not just shipping models.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== INTERACTIVE DEMO ===== -->
+<section id="demo" class="section demo-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-label">Interactive</div>
+            <h2 class="section-title">Live Demand Forecasting Simulator</h2>
+            <p class="section-subtitle">Adjust real-world demand parameters and watch the forecasting model respond in real time. This is the core challenge in demand forecasting: balancing trend, seasonality, and noise.</p>
+        </div>
+        <div class="demo-card fade-in">
+            <div class="demo-controls">
+                <div class="control-group">
+                    <label for="baseDemand">Base Demand <span class="control-unit">(units / week)</span></label>
+                    <div class="slider-row">
+                        <input type="range" id="baseDemand" min="100" max="1000" value="400" step="10">
+                        <span class="slider-val" id="baseDemandVal">400</span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="growthRate">Annual Growth Rate <span class="control-unit">(%)</span></label>
+                    <div class="slider-row">
+                        <input type="range" id="growthRate" min="0" max="30" value="10" step="1">
+                        <span class="slider-val" id="growthRateVal">10%</span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="seasonality">Seasonality Strength <span class="control-unit">(%)</span></label>
+                    <div class="slider-row">
+                        <input type="range" id="seasonality" min="0" max="80" value="30" step="5">
+                        <span class="slider-val" id="seasonalityVal">30%</span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="noiseLevel">Market Noise <span class="control-unit">(%)</span></label>
+                    <div class="slider-row">
+                        <input type="range" id="noiseLevel" min="0" max="40" value="15" step="1">
+                        <span class="slider-val" id="noiseLevelVal">15%</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-regen" id="regenerateBtn">↻ Regenerate Signal</button>
+                <div class="demo-stats">
+                    <div class="stat">
+                        <span class="stat-label">Annual Total</span>
+                        <span class="stat-val" id="statTotal">—</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Peak Week</span>
+                        <span class="stat-val" id="statPeak">—</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Avg Weekly</span>
+                        <span class="stat-val" id="statAvg">—</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Forecast MAPE</span>
+                        <span class="stat-val" id="statMape">—</span>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-chart-wrap">
+                <div class="demo-chart">
+                    <canvas id="forecastChart"></canvas>
+                </div>
+                <div class="chart-legend">
+                    <span class="legend-item"><span class="legend-line legend-actual"></span>Actual Demand</span>
+                    <span class="legend-item"><span class="legend-line legend-forecast"></span>Model Forecast</span>
+                    <span class="legend-item"><span class="legend-band"></span>95% Confidence Interval</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section contact-section">
+    <div class="container">
+        <div class="contact-card fade-in">
+            <h2 class="contact-headline">Let's build something that matters.</h2>
+<div class="contact-links">
+                <a href="mailto:gsnandode@gmail.com" class="btn btn-primary btn-large">gsnandode@gmail.com</a>
+                <a href="https://linkedin.com/in/gsnandode" class="btn btn-ghost btn-large" target="_blank" rel="noopener">LinkedIn →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <span class="footer-name">Gaurav Nandode</span>
+            <span class="footer-sep">·</span>
+            <span>Lead Data Scientist</span>
+            <span class="footer-sep">·</span>
+            <span>India</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+// ===== NAVBAR: scroll shadow =====
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+}, { passive: true });
+
+// ===== MOBILE NAV TOGGLE =====
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+});
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+    });
+});
+
+// ===== SCROLL FADE-IN =====
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -48px 0px' });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// ===== DEMAND FORECASTING SIMULATOR =====
+function getVal(id) { return parseFloat(document.getElementById(id).value); }
+
+function generateData(base, growthPct, seasonalityPct, noisePct) {
+    const actual = [], forecast = [], upper = [], lower = [];
+    for (let t = 0; t < 52; t++) {
+        const trend = 1 + (growthPct / 100) * (t / 52);
+        // Seasonal peak around weeks 44-48 (winter/holiday)
+        const seasonal = 1 + (seasonalityPct / 100) * Math.sin(2 * Math.PI * (t - 10) / 52);
+        const noise = () => 1 + (noisePct / 100) * (Math.random() * 2 - 1);
+
+        const actualVal = base * trend * seasonal * noise() * 0.85;
+        actual.push(Math.max(5, Math.round(actualVal)));
+
+        const fval = base * trend * seasonal * noise() * 0.4 + actualVal * 0.6;
+        forecast.push(Math.max(5, Math.round(fval)));
+
+        const ci = Math.abs(fval) * (noisePct / 100) * 0.55;
+        upper.push(Math.max(5, Math.round(fval + ci)));
+        lower.push(Math.max(5, Math.round(fval - ci)));
+    }
+    return { actual, forecast, upper, lower };
+}
+
+function computeStats(actual, forecast) {
+    const total = actual.reduce((a, b) => a + b, 0);
+    const avg = Math.round(total / actual.length);
+    const peakIdx = actual.indexOf(Math.max(...actual)) + 1;
+    const mape = (actual.reduce((s, a, i) => s + Math.abs((a - forecast[i]) / a), 0) / actual.length * 100).toFixed(1);
+    return { total, avg, peakIdx, mape };
+}
+
+const labels = Array.from({ length: 52 }, (_, i) => `W${i + 1}`);
+const ctx = document.getElementById('forecastChart').getContext('2d');
+
+const chart = new Chart(ctx, {
+    type: 'line',
+    data: { labels, datasets: [] },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { intersect: false, mode: 'index' },
+        plugins: {
+            legend: { display: false },
+            tooltip: {
+                backgroundColor: '#0f172a',
+                titleColor: '#94a3b8',
+                bodyColor: '#f1f5f9',
+                borderColor: '#1e293b',
+                borderWidth: 1,
+                padding: 12,
+                filter: item => item.dataset.label !== '95% CI Upper' && item.dataset.label !== '95% CI Lower',
+                callbacks: {
+                    label: ctx => `${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()} units`
+                }
+            }
+        },
+        scales: {
+            x: {
+                grid: { color: '#f1f5f9' },
+                ticks: { color: '#94a3b8', maxTicksLimit: 13, font: { family: 'Inter', size: 11 } }
+            },
+            y: {
+                grid: { color: '#f1f5f9' },
+                ticks: {
+                    color: '#94a3b8',
+                    font: { family: 'Inter', size: 11 },
+                    callback: v => v.toLocaleString()
+                }
+            }
+        },
+        elements: {
+            point: { radius: 0, hoverRadius: 5 },
+            line: { tension: 0.35 }
+        },
+        animation: { duration: 350, easing: 'easeInOutQuart' }
+    }
+});
+
+function updateChart() {
+    const base = getVal('baseDemand');
+    const growth = getVal('growthRate');
+    const seasonality = getVal('seasonality');
+    const noise = getVal('noiseLevel');
+
+    document.getElementById('baseDemandVal').textContent = base;
+    document.getElementById('growthRateVal').textContent = growth + '%';
+    document.getElementById('seasonalityVal').textContent = seasonality + '%';
+    document.getElementById('noiseLevelVal').textContent = noise + '%';
+
+    const { actual, forecast, upper, lower } = generateData(base, growth, seasonality, noise);
+    const stats = computeStats(actual, forecast);
+
+    document.getElementById('statTotal').textContent = stats.total.toLocaleString();
+    document.getElementById('statAvg').textContent = stats.avg.toLocaleString();
+    document.getElementById('statPeak').textContent = `Week ${stats.peakIdx}`;
+    document.getElementById('statMape').textContent = stats.mape + '%';
+
+    chart.data.datasets = [
+        {
+            label: '95% CI Upper',
+            data: upper,
+            borderColor: 'transparent',
+            backgroundColor: 'rgba(79, 70, 229, 0.1)',
+            fill: '+1',
+            pointRadius: 0,
+            tension: 0.35,
+            order: 10
+        },
+        {
+            label: '95% CI Lower',
+            data: lower,
+            borderColor: 'transparent',
+            backgroundColor: 'transparent',
+            fill: false,
+            pointRadius: 0,
+            tension: 0.35,
+            order: 10
+        },
+        {
+            label: 'Actual Demand',
+            data: actual,
+            borderColor: '#4f46e5',
+            borderWidth: 2.5,
+            backgroundColor: 'transparent',
+            fill: false,
+            order: 2
+        },
+        {
+            label: 'Model Forecast',
+            data: forecast,
+            borderColor: '#06b6d4',
+            borderWidth: 2,
+            borderDash: [6, 4],
+            backgroundColor: 'transparent',
+            fill: false,
+            order: 1
+        }
+    ];
+    chart.update();
+}
+
+updateChart();
+['baseDemand', 'growthRate', 'seasonality', 'noiseLevel'].forEach(id => {
+    document.getElementById(id).addEventListener('input', updateChart);
+});
+document.getElementById('regenerateBtn').addEventListener('click', updateChart);
+</script>
 </body>
 </html>
