@@ -54,7 +54,7 @@
                     I turn operational complexity into measurable business outcomes.
                 </h1>
                 <p class="hero-sub">
-                    Lead Data Scientist · 9 years building production ML systems across logistics, healthcare, and enterprise AI — reducing costs by 15%, cutting processing time by 25%.
+                    Lead Data Scientist · 9 years building production ML and GenAI systems across logistics, healthcare, and enterprise AI — reducing costs by 15%, cutting processing time by 25%.
                 </p>
                 <div class="hero-cta">
                     <a href="#work" class="btn btn-primary">View Work</a>
@@ -143,6 +143,78 @@
                     <span class="skill-tag">RAG Systems</span>
                     <span class="skill-tag">Computer Vision</span>
                     <span class="skill-tag">Time Series</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== INTERACTIVE DEMO ===== -->
+<section id="demo" class="section demo-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <div class="section-label">Interactive</div>
+            <h2 class="section-title">Live Demand Forecasting Simulator</h2>
+            <p class="section-subtitle">Adjust real-world demand parameters and watch the forecasting model respond in real time. This is the core challenge in demand forecasting: balancing trend, seasonality, and noise.</p>
+        </div>
+        <div class="demo-card fade-in">
+            <div class="demo-controls">
+                <div class="control-group">
+                    <label for="baseDemand">Base Demand <span class="control-unit">(units / week)</span></label>
+                    <div class="slider-row">
+                        <input type="range" id="baseDemand" min="100" max="1000" value="400" step="10">
+                        <span class="slider-val" id="baseDemandVal">400</span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="growthRate">Annual Growth Rate <span class="control-unit">(%)</span></label>
+                    <div class="slider-row">
+                        <input type="range" id="growthRate" min="0" max="30" value="10" step="1">
+                        <span class="slider-val" id="growthRateVal">10%</span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="seasonality">Seasonality Strength <span class="control-unit">(%)</span></label>
+                    <div class="slider-row">
+                        <input type="range" id="seasonality" min="0" max="80" value="30" step="5">
+                        <span class="slider-val" id="seasonalityVal">30%</span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="noiseLevel">Market Noise <span class="control-unit">(%)</span></label>
+                    <div class="slider-row">
+                        <input type="range" id="noiseLevel" min="0" max="40" value="15" step="1">
+                        <span class="slider-val" id="noiseLevelVal">15%</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-regen" id="regenerateBtn">↻ Regenerate Signal</button>
+                <div class="demo-stats">
+                    <div class="stat">
+                        <span class="stat-label">Annual Total</span>
+                        <span class="stat-val" id="statTotal">—</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Peak Week</span>
+                        <span class="stat-val" id="statPeak">—</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Avg Weekly</span>
+                        <span class="stat-val" id="statAvg">—</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Forecast MAPE</span>
+                        <span class="stat-val" id="statMape">—</span>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-chart-wrap">
+                <div class="demo-chart">
+                    <canvas id="forecastChart"></canvas>
+                </div>
+                <div class="chart-legend">
+                    <span class="legend-item"><span class="legend-line legend-actual"></span>Actual Demand</span>
+                    <span class="legend-item"><span class="legend-line legend-forecast"></span>Model Forecast</span>
+                    <span class="legend-item"><span class="legend-band"></span>95% Confidence Interval</span>
                 </div>
             </div>
         </div>
@@ -417,78 +489,6 @@
                 <div class="authority-content">
                     <div class="authority-title">Educator &amp; Mentor</div>
                     <p>Conducts internal bootcamps on ML and AI engineering. Mentors junior data scientists on production practices, system design, and applied modeling — building team capability, not just shipping models.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== INTERACTIVE DEMO ===== -->
-<section id="demo" class="section demo-section">
-    <div class="container">
-        <div class="section-header fade-in">
-            <div class="section-label">Interactive</div>
-            <h2 class="section-title">Live Demand Forecasting Simulator</h2>
-            <p class="section-subtitle">Adjust real-world demand parameters and watch the forecasting model respond in real time. This is the core challenge in demand forecasting: balancing trend, seasonality, and noise.</p>
-        </div>
-        <div class="demo-card fade-in">
-            <div class="demo-controls">
-                <div class="control-group">
-                    <label for="baseDemand">Base Demand <span class="control-unit">(units / week)</span></label>
-                    <div class="slider-row">
-                        <input type="range" id="baseDemand" min="100" max="1000" value="400" step="10">
-                        <span class="slider-val" id="baseDemandVal">400</span>
-                    </div>
-                </div>
-                <div class="control-group">
-                    <label for="growthRate">Annual Growth Rate <span class="control-unit">(%)</span></label>
-                    <div class="slider-row">
-                        <input type="range" id="growthRate" min="0" max="30" value="10" step="1">
-                        <span class="slider-val" id="growthRateVal">10%</span>
-                    </div>
-                </div>
-                <div class="control-group">
-                    <label for="seasonality">Seasonality Strength <span class="control-unit">(%)</span></label>
-                    <div class="slider-row">
-                        <input type="range" id="seasonality" min="0" max="80" value="30" step="5">
-                        <span class="slider-val" id="seasonalityVal">30%</span>
-                    </div>
-                </div>
-                <div class="control-group">
-                    <label for="noiseLevel">Market Noise <span class="control-unit">(%)</span></label>
-                    <div class="slider-row">
-                        <input type="range" id="noiseLevel" min="0" max="40" value="15" step="1">
-                        <span class="slider-val" id="noiseLevelVal">15%</span>
-                    </div>
-                </div>
-                <button class="btn btn-primary btn-regen" id="regenerateBtn">↻ Regenerate Signal</button>
-                <div class="demo-stats">
-                    <div class="stat">
-                        <span class="stat-label">Annual Total</span>
-                        <span class="stat-val" id="statTotal">—</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-label">Peak Week</span>
-                        <span class="stat-val" id="statPeak">—</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-label">Avg Weekly</span>
-                        <span class="stat-val" id="statAvg">—</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-label">Forecast MAPE</span>
-                        <span class="stat-val" id="statMape">—</span>
-                    </div>
-                </div>
-            </div>
-            <div class="demo-chart-wrap">
-                <div class="demo-chart">
-                    <canvas id="forecastChart"></canvas>
-                </div>
-                <div class="chart-legend">
-                    <span class="legend-item"><span class="legend-line legend-actual"></span>Actual Demand</span>
-                    <span class="legend-item"><span class="legend-line legend-forecast"></span>Model Forecast</span>
-                    <span class="legend-item"><span class="legend-band"></span>95% Confidence Interval</span>
                 </div>
             </div>
         </div>
